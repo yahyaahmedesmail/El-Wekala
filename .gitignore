@@ -1,0 +1,39 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# database (SQLite legacy — no longer used)
+prisma/dev.db
+prisma/dev.db-journal
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env
+.env*.local
+
+# uploaded payment receipts
+/public/uploads/receipts/*
+!/public/uploads/receipts/.gitkeep
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+.vercel

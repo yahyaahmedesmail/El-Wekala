@@ -1,0 +1,51 @@
+{
+  "name": "el-wekala",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:seed": "tsx prisma/seed.ts",
+    "db:setup": "prisma db push && tsx prisma/seed.ts",
+    "db:docker": "docker compose up -d",
+    "db:reset": "prisma db push --force-reset && tsx prisma/seed.ts",
+    "postinstall": "prisma generate"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.22.0",
+    "arabic-reshaper": "^1.1.0",
+    "bcryptjs": "^2.4.3",
+    "bidi-js": "^1.0.3",
+    "html2canvas": "^1.4.1",
+    "iconv-lite": "^0.7.3",
+    "jspdf": "^4.2.1",
+    "lucide-react": "^0.400.0",
+    "next": "^14.2.0",
+    "next-auth": "^4.24.0",
+    "nodemailer": "^7.0.13",
+    "pdfkit": "^0.15.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^20.0.0",
+    "@types/nodemailer": "^8.0.1",
+    "@types/pdfkit": "^0.13.5",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0",
+    "prisma": "^5.22.0",
+    "tailwindcss": "^3.4.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.0.0"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  }
+}
